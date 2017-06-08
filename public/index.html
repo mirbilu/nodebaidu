@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>百度新闻</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#"><span class="iconfont">&#x3487;</span></a>
+            <a href="#"><span class="iconfont">&#xe61a;</span></a>
+            <a href="#"><span class="iconfont">&#xe601;</span></a>
+            <a href="#"><span class="iconfont">&#xf0008;</span></a>
+        </header>
+        <nav>
+           <ul>
+                <li>
+                    <a href="#">精选</a><i></i>
+                </li>
+                <li>
+                    <a href="#">百家</a><i></i>
+                </li>
+                <li>
+                    <a href="#">本地</a><i></i>
+                </li>
+                <li>
+                    <a href="#">图片</a><i></i>
+                </li>
+                <li>
+                    <a href="#">娱乐</a><i></i>
+                </li>
+                <li>
+                    <a href="#">社会</a><i></i>
+                </li>
+                <li>
+                    <a href="#">军事</a><i></i>
+                </li>
+                <li>
+                    <a href="#">女人</a><i></i>
+                </li>
+                <li>
+                    <a href="#">搞笑</a><i></i>
+                </li>
+                <li>
+                    <a href="#">互联网</a><i></i>
+                </li>
+                <li>
+                    <a href="#">更多</a><i></i>
+                </li>
+           </ul> 
+        </nav>
+        <article class="news-main">
+            <ul class="news-lists">
+                <li class="news-list">
+                    <div class="newsimg">
+                        <img src="img/1.jpg" width="100%">
+                    </div>
+                    <div class="newscontent">
+                        <h1>90后女孩网络直播试衣</h1>
+                        <p>     
+                            <span class="newstime">2016年</span>
+                            <span class="newssrc">极客新闻</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var deviceWidth=$('body').width();
+            $('nav li').each(function(index,item){
+                if ($(this).find('a').html().split('').length>2) {
+                    $(this).width(deviceWidth/3);
+                }
+                else{
+                    $(this).width(deviceWidth/6);
+                }
+                
+            })
+        })
+    </script>
+    <script type="text/javascript" src="js/news.js"></script>
+</body>
+
+</html>
